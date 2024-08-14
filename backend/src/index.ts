@@ -1,6 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config({ path: './config/config.env' });
 import express from 'express';
+
 import connectDB from './config/database.js';
 import userRouter from './router/userRouter.js';
 import articleRouter from './router/articleRouter.js';
@@ -36,3 +37,6 @@ process.on('unhandledRejection', (err) => {
   }
   server.close(() => process.exit(1));
 });
+
+// For testing purposes
+export default app;

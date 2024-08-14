@@ -1,4 +1,6 @@
 import mongoose from 'mongoose';
+// Function that connects application to MongoDB.
+// Requires MONGO_URL in .env
 const connectDB = async () => {
     const mongoURL = process.env.MONGO_URL;
     if (!mongoURL) {

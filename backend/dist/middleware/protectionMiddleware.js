@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
 import User from '../schemas/userSchema.js';
+// Function checks if the user is authorized to do requests or not
 const protect = async (req, res, next) => {
     let token;
     if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {

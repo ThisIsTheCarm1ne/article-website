@@ -1,6 +1,7 @@
 import User from '../schemas/userSchema.js';
 import asyncHandler from "express-async-handler";
 import jwt from "jsonwebtoken";
+// Function that generates JWT token.
 const genToken = (id) => {
     const tokenSecret = process.env.TOKEN_SECRET;
     if (!tokenSecret) {

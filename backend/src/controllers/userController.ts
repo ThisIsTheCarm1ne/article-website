@@ -9,7 +9,7 @@ import { IUser } from '../schemas/userSchema.js';
 import asyncHandler from "express-async-handler";
 import jwt from "jsonwebtoken";
 
-
+// Function that generates JWT token.
 const genToken = (id: string | number): string => {
   const tokenSecret = process.env.TOKEN_SECRET;
 

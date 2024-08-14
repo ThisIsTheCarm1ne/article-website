@@ -28,4 +28,6 @@ process.on('unhandledRejection', (err) => {
     }
     server.close(() => process.exit(1));
 });
+// For testing purposes
+export default app;
 //# sourceMappingURL=index.js.map

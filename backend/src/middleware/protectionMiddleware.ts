@@ -11,6 +11,7 @@ export interface AuthenticatedRequest extends Request {
   user?: IUser;
 }
 
+// Function checks if the user is authorized to do requests or not
 const protect = async (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
   let token: string | undefined;
 
